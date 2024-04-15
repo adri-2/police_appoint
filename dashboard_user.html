@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/style3.css">
+</head>
+<body>
+    <header>
+        <h1>USER DASHBOARD</h1>
+        <h2>bienvenue.....</h2>
+    </header>
+    <section id="menu">
+        <div class="logo">
+            <img src="/image/logo.jpg" alt="">
+            <a  href="index.html"> Police Appoint</a>
+            <div class="val-box" id="admin">
+                <i class="fa-solid fa-user-large"></i> 
+                <div>
+                  <span class="nom">User</span>
+                </div> 
+            </div>
+        </div>
+        <div class="items">
+            <li><i class="fa-sharp fa-solid fa-gauge"></i><a href="#">Dashboard</a></li>
+            <li><i class="fa-solid fa-calendar-check"></i><a href="#">Appointment</a></li>
+        </div>
+   </section> 
+
+   <section class="interface">
+    <a type="button" class="add" id="button" href="#form-appoint">PRENDRE RENDEZ-VOUS</a>
+    <div>
+        <table class="tableau" id="tableau">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>Sexe</th>
+                    <th>E-mail</th>
+                    <th>Pays</th>
+                    <th>Ville</th>
+                    <th>Commissariat</th>
+                    <th>Date et heure souhaitee</th>
+                    <th>Type de demande</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody class="data_table" id="data">
+                <td>KENNE</td>
+                <td>KEVINE</td>
+                <td>F</td>
+                <td>kevine@gmail.com</td>
+                <td>Cameroun</td>
+                <td>douala</td>
+                <td>10eme dongbong</td>
+                <td>22/03/2024 08:00</td>
+                <td>nouvelle CNI</td>
+                <td id="logo">
+                    <button id="one" class="button"><i class="fa-solid fa-eye"></i></button>
+                    <button id="two" class="button"><i class="fa-solid fa-pen"></i></button>
+                    <button id="three" class="button"><i class="fa-solid fa-trash-can"></i></button>
+                </td>
+            </tbody>
+        </table>
+    </div>
+   </section>
+    <form action = "traitement.php" methode = "POST" id="form-appoint">
+        <div class="popup">
+            <div class="close-btn" id="close">&times;</div>
+            <div class="form"></div>
+            <h4>veillez enregistrer vos informations</h4>
+            <div class="form-element" id="mon_formulaire">
+                <label class="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br>
+                <label class="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required><br>
+                <label class="sexe">Sexe :</label>
+                <input type="text" id="sexe" name="Sexe" required><br>
+                <label class="email">Email :</label>
+                <input type="email" id="email" name="email" required><br>
+                <label class="pays">Pays :</label>
+                <input type="text" id="pays" name="pays" required><br>
+                <label class="ville">Ville :</label>
+                <input type="text" id="ville" name="ville" required><br>
+                <label class="commissariat"> commisariat :</label>
+                <input type="text" id="commissariat" name="commissariat" required><br>
+                <label class="datetime">heure et date</label>
+                <input type="datetime-local" id="date_heure" name="date_heure" required><br>
+                <label class="type_demande">Type de demande :</label>
+                <select id="type_demande" name="type_demande" required>
+                    <option value="Nouvelle CNI">Nouvelle CNI</option>
+                    <option value="Renouvellement CNI">Renouvellement CNI</option>
+                    <option value="Autre">Autre</option>
+                </select><br>
+                <button class="valider" id="bouton">Prendre rendez-vous</button>
+            </div>
+        </div>
+    </form>    
+    <script src="/index.js">
+    </script>
+   </section>
+</body>
+</html>

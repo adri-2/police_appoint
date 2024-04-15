@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+ .header{
+  
+    padding-top: 4em;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 7em;
+  }
+  
+body {
+    width: 100%;
+    /* background: #E5E7EB; */
+    position: relative;
+    display: flex;
+}
+
+.titre {
+    text-align: center;
+    font-size: 3em;
+    font-family: none;
+    background-color: #e7e7f3;
+    padding: 0.5em;
+    margin-top: -1.3em;
+}
+
+ #menu {
+    background: #ebebee;
+    width: 300px; ;
+    height: 50em;
+    margin-top: 6em;
+    border-right: 3px solid rgb(122, 96, 146);
+}
+
+#admin {
+    top: 5em;
+    position: relative;
+    left: -4em;
+    font-size: 25px;
+    width: 80px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    background: rgb(150, 156, 143);
+    margin-right:15px ;
+}
+
+.nom {
+    color: #0f0000;
+}
+
+#menu .logo {
+    display:  flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+
+#menu .logo img {
+    width: 40px;
+    margin-right: 15px;
+}
+
+#menu .logo a {
+    color: #0f0000;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: none;
+}
+
+#menu .items {
+    margin-top: 15em;
+}
+
+#menu .items li:hover {
+    background: #253047;
+    width: 100%;
+    cursor: pointer;
+}
+
+#menu .items li {
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+
+#menu .items li:nth-child(1) {
+    border-left: 4px solid white;
+}
+
+#menu .items li i {
+    color: rgb(134, 141, 151);
+    width:30px ;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+menu .items li:hover i, #menu .items li:hover a {
+    color : #F3F4F6
+}
+
+#menu .items li a {
+    text-decoration: none;
+    color: rgb(134, 141, 151);
+    font-weight: 300px;
+    transition: 0.3s ease;
+}
+
+#interface {
+  width: 100%;
+  height: 100%;
+  margin-top: 7em;
+}
+
+#interface .navigation {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 30px ;
+    border-bottom: 3px solid #594ef7 ;
+}
+
+#interface .navigation .rechercher {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .rechercher i {
+    margin-right: 14px;
+}
+
+#interface .navigation .rechercher input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+#interface .navigation .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#interface .navigation .profile i {
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#interface .navigation .profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.n1 {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+#menu-btn {
+  display: none;  
+  color: #2b2b2b;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 20px;  
+}
+
+.i-name {
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.values {
+    padding: 30px 30px 0 30px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.values .val-box {
+    background: #e7e2e2;
+    width: 235px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.values .val-box i {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background: chartreuse;
+    margin-right:15px ;
+}
+
+.values .val-box h3 {
+    font-size: 18px;
+    font-weight: 600;   
+}
+
+.values .val-box span {
+    font-size: 15px;
+    color: #828997;   
+}
+
+
+
+
+
+
+
+
+
+
+ 
